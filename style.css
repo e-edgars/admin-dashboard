@@ -90,6 +90,9 @@ input[type="search"] {
 
   border: none;
   border-radius: 18px;
+
+  color: white;
+  font-weight: bold;
 }
 
 header a {
@@ -108,13 +111,17 @@ header a:hover {
   display: grid;
   grid-template-columns: 60px 1fr;
   align-items: center;
-  gap: 20px
+  gap: 20px;
 }
 
 .greet button {
   width: 60px;
   height: 60px;
   background-color: rgb(238, 208, 56);
+
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
 
   border-radius: 30px;
   border: none;
