@@ -44,9 +44,14 @@ header {
   grid-template-rows: 2fr 3fr;
   grid-template-columns: 3fr 1fr;
   align-items: center;
+  gap: 12px;
 
-  padding: 2% 5%;
+  padding: 1% 3%;
+}
 
+header img {
+  width: 20px;
+  height: auto;
 }
 
 input[type="search"] {
@@ -55,19 +60,64 @@ input[type="search"] {
 
   background-color: rgb(215, 228, 226);
 
-  height: 40%;
+  padding: 6px;
   width: 80%;
+}
+
+.search {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: 20px 1fr;
+  align-items: center;
 }
 
 .user-profile {
   justify-self: end;
 
   font-weight: bold;
+
+  display: grid;
+  grid-auto-flow: column;
+  place-items: center;
+  gap: 20px;
+}
+
+.user-profile button {
+  width: 35px;
+  height: 35px;
+
+  background-color: rgb(238, 208, 56);
+
+  border: none;
+  border-radius: 18px;
+}
+
+header a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgb(135, 135, 135);
 }
 
 .greet {
   font-weight: bold;
   font-size: 1.3rem;
+
+  display: grid;
+  grid-template-columns: 60px 1fr;
+  align-items: center;
+  gap: 20px
+}
+
+.greet button {
+  width: 60px;
+  height: 60px;
+  background-color: rgb(238, 208, 56);
+
+  border-radius: 30px;
+  border: none;
 }
 
 .greeting {
@@ -81,7 +131,7 @@ input[type="search"] {
   gap: 6%;
 }
 
-button {
+.buttons button {
   border: none;
   border-radius: 20px;
 
@@ -91,6 +141,12 @@ button {
   font-weight: bold;
 
   padding: 8px;
+}
+
+.buttons button:hover {
+ background-color: rgb(35, 97, 172);
+
+ cursor: pointer;
 }
 
 aside {
@@ -124,6 +180,20 @@ aside {
   margin: 0;
 }
 
+.nav-item img,
+.brand-item img {
+  width: 20px;
+  height: auto;
+  margin-right: 20px;
+  margin-left: 10px;
+}
+
+.nav-item,
+.brand-item {
+  display: flex;
+  gap: 8px;
+}
+
 .nav {
   display: grid;
   gap: 18px;
@@ -136,7 +206,7 @@ aside {
   gap: 18px;
 }
 
-a {
+aside a {
   text-decoration: none;
   color: white;
 }
@@ -260,17 +330,4 @@ main {
 .trending-project .desc {
   color: rgb(76, 77, 77);
   font-size: 0.8rem;
-}
-
-img {
-  width: 20px;
-  height: auto;
-  margin-right: 20px;
-  margin-left: 10px;
-}
-
-.nav-item,
-.brand-item {
-  display: flex;
-  gap: 8px;
 }
