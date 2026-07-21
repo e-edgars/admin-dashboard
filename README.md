@@ -1,3 +1,8 @@
 # admin-dashboard
 This is my version of this image
- ![admin dashboard](img/image.png)
+
+# My version
+![My version of admin dashboard](img/myVersion.png)
+
+# Template I used
+ ![Admin dashboard template](img/template.png)
