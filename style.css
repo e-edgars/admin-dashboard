@@ -9,9 +9,68 @@ body {
   height: 100vh;
 }
 
+.container {
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: 1fr 5fr;
+}
+
 header {
   background-color: rgb(255, 255, 255);
   grid-column: 2 / 3;
+
+  display: grid;
+  grid-template-rows: 2fr 3fr;
+  grid-template-columns: 3fr 1fr;
+  align-items: center;
+
+  padding: 0 5%;
+
+}
+
+input[type="search"] {
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(215, 228, 226);
+
+  height: 40%;
+  width: 80%;
+}
+
+.user-profile {
+  justify-self: end;
+
+  font-weight: bold;
+}
+
+.greet {
+  font-weight: bold;
+  font-size: 1.3rem;
+}
+
+.greeting {
+  font-size: 0.8rem;
+}
+
+.buttons {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  gap: 6%;
+}
+
+button {
+  border: none;
+  border-radius: 20px;
+
+  background-color: rgb(54, 138, 241);
+
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+
+  padding: 8px;
 }
 
 aside {
@@ -54,11 +113,4 @@ a:hover {
 main {
   background-color: rgb(215, 228, 226);
   grid-column: 2 / 3;
-}
-
-.container {
-  height: 100%;
-  display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: 1fr 6fr;
 }
