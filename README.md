@@ -1,5 +1,5 @@
 # admin-dashboard
-My version of this the image below
+I recreated the image below using HTML and CSS
 
 # My version
 ![My version of admin dashboard](img/myVersion.png)
